@@ -22,7 +22,7 @@ VALIDATE(){
         echo -e "$TIMESTAMP [ERROR] $2 ... $R FAILURE $N" | tee -a $LOG_FILE
         exit 1
     else
-        echo -e "$TIMESTAMP [INFO] $2 .... $G SUCCESS $N | tee -a $LOG_FILE
+        echo -e "$TIMESTAMP [INFO] $2 .... $G SUCCESS $N" | tee -a $LOG_FILE
     fi
 }
 cp mongo.repo /etc/yum.repos.d/mongo.repo
