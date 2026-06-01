@@ -21,7 +21,6 @@ VALIDATE(){
     if [ $1 -ne 0 ]; then 
         echo -e "$TIMESTAMP [ERROR] $2 ... $R FAILURE $N" | tee -a $LOG_FILE
         exit 1
-        else
     else
         echo -e "$TIMESTAMP [INFO] $2 .... $G SUCCESS $N | tee -a $LOG_FILE
     fi
